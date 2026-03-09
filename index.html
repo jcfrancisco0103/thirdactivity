@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Challenges</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Function Challenges</h1>
+        <p>BootCamp activity — try each converter below.</p>
+      </header>
+
+      <main>
+        <section class="card">
+          <h2>1. Celsius → Fahrenheit</h2>
+          <label for="celsius">Celsius</label>
+          <input type="number" id="celsius" placeholder="e.g. 25" step="any" />
+          <button type="button" id="btn-celsius">Convert</button>
+          <p class="result" id="result-celsius" aria-live="polite"></p>
+        </section>
+
+        <section class="card">
+          <h2>2. Hours → Seconds</h2>
+          <label for="hours">Hours</label>
+          <input type="number" id="hours" placeholder="e.g. 2.5" step="any" min="0" />
+          <button type="button" id="btn-hours">Convert</button>
+          <p class="result" id="result-hours" aria-live="polite"></p>
+        </section>
+
+        <section class="card">
+          <h2>3. Average of Three Numbers</h2>
+          <div class="inputs-row">
+            <label for="num-a">A</label>
+            <input type="number" id="num-a" placeholder="10" step="any" />
+            <label for="num-b">B</label>
+            <input type="number" id="num-b" placeholder="20" step="any" />
+            <label for="num-c">C</label>
+            <input type="number" id="num-c" placeholder="30" step="any" />
+          </div>
+          <button type="button" id="btn-avg">Compute average</button>
+          <p class="result" id="result-avg" aria-live="polite"></p>
+        </section>
+
+        <section class="card">
+          <h2>4. ETH → Dollars</h2>
+          <label for="eth">ETH amount</label>
+          <input type="number" id="eth" placeholder="e.g. 1.5" step="any" min="0" />
+          <label for="rate">USD per 1 ETH</label>
+          <input type="number" id="rate" placeholder="e.g. 3500" step="any" min="0" />
+          <button type="button" id="btn-eth">Convert</button>
+          <p class="result" id="result-eth" aria-live="polite"></p>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
